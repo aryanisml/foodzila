@@ -3,7 +3,7 @@
 This project developed using Anuglar 11
 
 
-![ScreenShot](../src/assets/screenshot.gif)
+![ScreenShot](https://github.com/aryanisml/foodzila/blob/main/src/assets/screenshot.gif)
 
 # run server
 json-server --watch db.json
