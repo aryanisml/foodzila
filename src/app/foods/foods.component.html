@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="container__card">
+        <h1 class="container__title">{{receipeName?.name}}</h1>
+        <img src={{receipeName?.image}} alt="{{receipeName?.name}}" />
+        <div class="container__action">
+            <button mat-raised-button color="accent" (click)="show()">{{showResource}}</button>
+            <button mat-raised-button color="accent" (click)="fav()">
+                <mat-icon>
+                    favorite
+                </mat-icon>
+            </button>
+        </div>
+
+    </div>
+    <ng-container>
+        <div class="container__content">
+           <router-outlet></router-outlet>
+        </div>
+    </ng-container>
+</div>

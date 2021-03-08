@@ -1,0 +1,48 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="false"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar class="sidenav-container__menus">Menus</mat-toolbar>
+    <mat-nav-list>
+      <ng-container *ngFor="let item of sideNavItem">
+       <ng-container *ngIf="item.children && item.children.length>0">
+            <mat-accordian>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <spann>{{item.name}}</spann>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <ng-container *ngFor="let child of item.children">
+                        <mat-list-item>
+                            <a mat-list-item routerLink="food/{{child.name}}">
+                                {{child.name}}
+                            </a>
+                        </mat-list-item>
+                    </ng-container>
+                </mat-expansion-panel>
+            </mat-accordian>
+        </ng-container> 
+    </ng-container>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <div class="sidenav-container__link">
+        <a routerLink="/">Food Zila</a>
+        <a mat-list-item routerLink="fav">Favorite {{favCount}}</a>
+      </div>
+    </mat-toolbar>
+    <ng-content></ng-content>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

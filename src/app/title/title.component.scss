@@ -1,0 +1,13 @@
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:10vh;
+}
+
+.container > img {
+    object-fit: contain;
+}
+.container > h1 {
+    color: #ff4081;
+}

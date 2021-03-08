@@ -1,0 +1,44 @@
+{
+    "menu": [
+        {
+            "name": "North Indian",
+            "children": [
+                {
+                    "name": "Biryani"
+                },
+                {
+                    "name": "Paratha"
+                },
+                {
+                    "name": "Paneer"
+                }
+            ]
+        },
+        {
+            "name": "South Indian",
+            "children": [
+                {
+                    "name": "Ideali"
+                },
+                {
+                    "name": "Uttapa"
+                },
+                {
+                    "name": "Dosa"
+                }
+            ]
+        }
+    ],
+    "foodItems": [
+        {
+            "name": "Biryani",
+            "image": "https://media.istockphoto.com/photos/authentic-chicken-biryani-with-onion-raita-picture-id516401834?s=612x612",
+            "receipe": "Chicken Biryani is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together. The bottom layer of rice absorbs all the chicken juices as it cooks, giving it a tender texture and rich flavor, while the top layer of rice turns out white and fluffy. Buried in the Biryani, you’ll find whole cuts of succulent chicken bursting with flavor from the potent array of spices, herbs, and aromatics it’s marinated in."
+        },
+        {
+            "name": "Dosa",
+            "image": "https://thumbs.dreamstime.com/z/masala-dosa-21646814.jpg",
+            "receipe": "The lentils used to make dosa are husked and split Black Gram. These are also known as Urad Dal in hindi. The other English names of urad dal are Black Matpe Bean, Mungo Bean and Vigna Mungo (botanical name). Urad dal is available whole as well as split. To make dosa, you can use either the husked whole urad dal or the husked & split urad dal. Both these types of urad dal have an off-white color. The black husks on them have been removed."
+        }
+    ]
+}

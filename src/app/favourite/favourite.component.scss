@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 15px;
+}
+.card__container {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex: 0.5;
+}
+
+.card__container__place {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.card__container > strong {
+  display: flex;
+  justify-content: center;
+}
+
+.card__container__place > span:nth-child(1) {
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="card__container">
+        <strong>My Favourite List</strong>
+        <ng-container *ngFor="let item of itemsFav | keyvalue">
+            <div class="card__container__place">
+                <span (click)="navigate(item)">{{item.key}}</span>
+                <span>{{item?.value?.fav}}</span>
+            </div>
+        </ng-container>
+    </div>
+</div>
